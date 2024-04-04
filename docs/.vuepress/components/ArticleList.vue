@@ -106,6 +106,20 @@ function updatePage(pageNumber) {
 <style lang="scss">
 @use "@vuepress/theme-default/styles/mixins";
 
+.article-wrapper {
+  // @include mixins.content_wrapper;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+@media (max-width: 959px)  {
+  .article-wrapper {
+    padding: .5rem;
+  }
+}
+
 .article-pagination {
   display: flex;
   justify-content: center;
@@ -117,11 +131,6 @@ function updatePage(pageNumber) {
 
 html {
   --font-family-code: monospace, Consolas, Monaco, "Andale Mono", "Ubuntu Mono";
-}
-
-.article-wrapper {
-  @include mixins.content_wrapper;
-  text-align: center;
 }
 
 .theme-default-content pre code,
