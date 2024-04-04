@@ -5,7 +5,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
-  base: "/vblog",
+  base: "/",
   lang: "zh-CN",
   // locales: {
   //   // 键名是该语言所属的子路径
