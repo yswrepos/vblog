@@ -1,0 +1,28 @@
+.article-wrapper {
+
+  --c-text-lighter: #d8d8d3;
+  --font-family-code: monospace, Consolas, Monaco, "Andale Mono", "Ubuntu Mono"
+
+  .excerpt {
+    p code {
+      color: var(--c-text)
+      // background-color: 
+    }
+  }
+
+  pre {
+    code {
+      font-family: var(--font-family-code);
+      // color: var(--c-text-lighter);
+      color: #d1d6db;
+      padding: 0.25rem 0.5rem;
+      margin: 0;
+      font-size: 0.85em;
+      background-color: transparent;
+      border-radius: 3px;
+      overflow-wrap: break-word;
+      transition: background-color var(--t-color);
+    }
+    
+  }
+}
