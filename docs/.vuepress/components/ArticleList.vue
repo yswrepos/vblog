@@ -108,7 +108,7 @@ function updatePage(pageNumber) {
 
 .article-wrapper {
   // @include mixins.content_wrapper;
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
   text-align: center;
