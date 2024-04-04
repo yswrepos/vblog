@@ -114,9 +114,12 @@ function updatePage(pageNumber) {
   text-align: center;
 }
 
-@media (max-width: 959px)  {
+@media (max-width: 959px) {
   .article-wrapper {
-    padding: .5rem;
+    padding: 0.5rem;
+  }
+  .article .article-title .title {
+    font-size: 1rem;
   }
 }
 
@@ -156,6 +159,12 @@ html {
 
   @media (max-width: 419px) {
     border-radius: 0;
+    header.title {
+      font-size: 1.5rem !important;
+    }
+    h2 {
+      font-size: 1.1rem !important;
+    }
   }
 
   &:hover {
