@@ -1,0 +1,21 @@
+image: node:18-alpine
+
+stages:
+  - deploy
+
+variables:
+  CONTAINER_NAME: vue-blog
+
+default:
+  tags:
+    - blog
+
+deploy:
+  stage: deploy
+  image: docker
+  script:
+    - docker build -t vue/blog:latest .
+    - if [[ -n $(docker ps -aq --filter name=$CONTAINER_NAME) ]]; then
+      docker rm -f $CONTAINER_NAME;
+      fi
+    - docker run -d --name $CONTAINER_NAME -p 4001:80 vue/blog:latest
