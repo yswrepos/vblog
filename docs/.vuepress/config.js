@@ -25,6 +25,25 @@ export default defineUserConfig({
   description: "Yunsw site",
 
   theme: defaultTheme({
+    hostname: "https://b.yongzhenxin.com",
+    themePlugins: {
+      activeHeaderLinks: true,
+      backToTop: true,
+      container: {
+        tip: true,
+        warning: true,
+        danger: true,
+        details: true,
+      },
+      copyCode: {
+        selector: String,
+        align: String,
+        color: String,
+        backgroundTransition: Boolean,
+        backgroundColor: String,
+        successText: String,
+      },
+    },
     home: "/article/",
     logo: "/logo.png",
     // repo: "",
