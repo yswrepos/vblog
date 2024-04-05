@@ -106,12 +106,16 @@ function updatePage(pageNumber) {
 <style lang="scss">
 @use "@vuepress/theme-default/styles/mixins";
 
+
 .article-wrapper {
   // @include mixins.content_wrapper;
   max-width: 760px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
   text-align: center;
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 959px) {
